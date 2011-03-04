@@ -29,7 +29,7 @@ articlesperpage 30
 # planet's news feeds
 
 feed 30m http://planet.ubuntu.com/rss20.xml
-    define_name Planet Ubuntu
+    define_name Ubuntu Planet
     
 feed 30m http://rss.slashdot.org/Slashdot/slashdot
 	define_name Slashdot

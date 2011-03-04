@@ -4,7 +4,7 @@ color:#444444;
 font-family:trebuchet ms,luxi sans,sans-serif;
 margin:10px auto auto;
 padding:0;
-width:850px;
+width:891px;
 }
 
 a {
@@ -21,7 +21,7 @@ text-decoration:underline;
 #header {
 margin:auto;
 position:relative;
-width:850px;
+width:891px;
 text-align: center;
 }
 
@@ -53,7 +53,7 @@ border-bottom: 2px solid;
 margin:25px 0 8px;
 padding:0 6px;
 text-align:right;
-width:600px;
+width:650px;
 }
 
 .itemdescription h2 {
@@ -78,7 +78,7 @@ max-width: 95%;
 
 #items {
 float:left;
-width:600px;
+width:650px;
 }
 
 .item {
