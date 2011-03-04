@@ -71,17 +71,11 @@ class RSS_Feed:
             "xmldescription": "Planet KDE - http://planetKDE.org/",
             "xmlownername": "Jonathan Riddell",
             "xmlowneremail": "",
-            "xmlmaxarticles": "",
-            "selectfeeds": ""
+            "xmlmaxarticles": ""
             }
-        self.feeds = {}
 
     def config_option(self, config, name, value):
-        if name == "selectfeeds":
-            for feed in rawdoglib.rawdog.parse_list(value):
-                self.feeds[feed] = True
-            return False
-        elif name in self.options:
+        if name in self.options:
             self.options[name] = value
             return False
         else:
@@ -151,9 +145,8 @@ class RSS_Feed:
         except ValueError:
             maxarticles = len(articles)
         for article in articles[:maxarticles]:
-#            if article.date is not None:
-                xml_article = channel.newChild(None, 'item', None)
-                self.article_to_xml(xml_article, rawdog, config, article)
+             xml_article = channel.newChild(None, 'item', None)
+             self.article_to_xml(xml_article, rawdog, config, article)
 
         doc.saveFormatFile(self.options["outputxml"], 1)
         doc.freeDoc()
@@ -207,8 +200,6 @@ class RSS_Feed:
 
         body = xml.newChild(None, 'body', None)
         for url in sorted(rawdog.feeds.keys()):
-            if not self.feeds.has_key(url):
-                continue
             outline = body.newChild(None, 'outline', None)
             outline.setProp('text', self.feed_name(rawdog.feeds[url], config))
             outline.setProp('type', 'rss')
@@ -226,18 +217,6 @@ class RSS_Feed:
 
         return True
 
-    def filter_feeds(self, rawdog, config, articles):
-        if len(self.feeds) != 0:
-            articles[:] = [a for a in articles if self.feeds.has_key(a.feed)]
-        return True
-
-import re
-from htmlentitydefs import name2codepoint
-def htmlentitydecode(s):
-    return re.sub('&(%s);' % '|'.join(name2codepoint),
-            lambda m: unichr(name2codepoint[m.group(1)]), s)
-
 rss_feed = RSS_Feed()
-rawdoglib.plugins.attach_hook("output_sorted_filter", rss_feed.filter_feeds)
 rawdoglib.plugins.attach_hook("config_option", rss_feed.config_option)
-rawdoglib.plugins.attach_hook("output_sorted_filter", rss_feed.output_write)
+rawdoglib.plugins.attach_hook("output_write", rss_feed.output_write)

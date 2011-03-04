@@ -36,7 +36,7 @@
                             'htmlUrl':link.getAttribute('htmlUrl'),
                              'xmlUrl':link.getAttribute('xmlUrl')})
 
-    for link in sorted(links_dict, key=lambda links_dict : links_dict['text']):
+    for link in sorted(links_dict, key=lambda links_dict : links_dict['text'].lower()):
         linktext = '<a href="%s">%s</a>\n'%(link['htmlUrl'],
                                             link['text'])
         flinktext= '<a href="%s"><img src="feed-icon.png"></a>\n'%link['xmlUrl']
