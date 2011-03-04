@@ -1,0 +1,17 @@
+<div class="item">
+<p class="itemheader">
+<span class="itemtitle">
+%if name:
+    ${name}:
+%else:
+    ${feed_title}:
+%endif
+${title}</span> ${date}
+</p>
+%if description:
+    <div class="itemdescription">
+    ${description}
+    </div>
+%endif
+</div>
+
