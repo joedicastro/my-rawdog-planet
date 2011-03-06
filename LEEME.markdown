@@ -63,6 +63,10 @@ dependencias) libreria *`libxml2`* por la librería estandar *`xml.dom.minidom`*
 
  Este fichero en versiones española e inglesa.
  
+* **rawdog-2.12.tar.gz**
+
+ rawdog package version 2.12
+  
 ##  Instrucciones
 
  Requiere tener python instalado e instalar rawdog. Una vez instalado rawdog, 
