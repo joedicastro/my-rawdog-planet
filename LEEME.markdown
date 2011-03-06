@@ -69,3 +69,8 @@ dependencias) libreria *`libxml2`* por la librería estandar *`xml.dom.minidom`*
  simplemente se corre el script `create.sh` para generar los planetas de 
  ejemplo. Si se realiza en local, se puede ejecutar `browse.sh` para visualizar
  inmediatamente el resultado. 
+
+### IMPORTANT
+
+ Esta configuración solo trabaja bien con rawdog 2.12, en la versión 2.13 no se
+ recogen las fechas de las fuentes

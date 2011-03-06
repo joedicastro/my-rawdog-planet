@@ -168,7 +168,7 @@ ignoretimeouts false
 # Whether to show Python traceback messages. If this is true, rawdog will show
 # a traceback message if an exception is thrown while fetching a feed; this is
 # mostly useful for debugging rawdog or feedparser.
-showtracebacks false
+#showtracebacks false
 
 # Whether to display verbose status messages saying what rawdog's doing
 # while it runs. Specifying -v or --verbose on the command line is
@@ -185,7 +185,7 @@ blocklevelhtml true
 # article causing formatting problems for the rest of the page.
 # For this option to have any effect, you need to have PyTidyLib or mx.Tixy
 # installed.
-tidyhtml true
+tidyhtml false
 
 # Whether the articles displayed should be sorted first by the date
 # provided in the feed (useful for "planet" pages, where you're

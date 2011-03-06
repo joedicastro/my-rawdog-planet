@@ -68,3 +68,6 @@ greater dependencies) *`libxml2`* library by the standard library
  simply run the script `create.sh` to generate the sample planets. If done 
  locally, you can run `browse.sh` to display the results immediately.
    
+### IMPORTANT
+
+ It's works well only with rawdog 2.12, in 2.13 version don't get the feeds date
