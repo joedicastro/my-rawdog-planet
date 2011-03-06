@@ -62,7 +62,7 @@ greater dependencies) *`libxml2`* library by the standard library
 
  This file in English and Spanish versions. 
  
-##  Instrucciones
+## Instructions
 
  You need to have python installed and install rawdog. Once installed rawdog, 
  simply run the script `create.sh` to generate the sample planets. If done 
