@@ -6,7 +6,7 @@
 %else:
     ${feed_title}:
 %endif
-${title}</span> ${date}
+${title}</span>
 </p>
 %if description:
     <div class="itemdescription">
