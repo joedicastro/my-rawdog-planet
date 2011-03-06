@@ -15,7 +15,7 @@
     <a href="http://localhost:8000/planet/en/"><img src="en_GB.png" title="EN"></a>
 </%def>
 <%def name="log()">
-    <a href="http://localhost:8000/planet/en/log.html">Satus Log</a>
+    <a href="http://localhost:8000/planet/en/log.html">Feeds Status Log</a>
 </%def>
 <%def name="validrss()">
 </%def>
