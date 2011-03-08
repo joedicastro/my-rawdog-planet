@@ -291,7 +291,7 @@ statuslogfile ../planet/en/log
 statusoutputfile ../planet/en/log.html
 
 # number of articles per page
-articlesperpage 30
+#articlesperpage 30
 
 # planet's news feeds
 

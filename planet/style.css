@@ -46,7 +46,7 @@ font-weight: 400
 
 .day h2 {
 background: none;
-color:dimGray;
+color:#696969;
 font-size:1.5em;
 font-weight:bold;
 border-bottom: 2px solid;
@@ -63,8 +63,8 @@ font-size:120%;
 }
 
 .time h3 {
-background-color:none;
-color:darkRed;
+background:none;
+color:#8B0000;
 padding: 4px;
 text-align:left;
 display:list-item;
@@ -84,7 +84,7 @@ width:650px;
 .item {
 -moz-border-radius: 10px;
 -webkit-border-radius: 10px;
-border: 2px solid lightgray;
+border: 2px solid #D3D3D3;
 background: white;
 padding:0.2em 1.2em 1.2em;
 margin-bottom: 28px;
@@ -138,16 +138,7 @@ padding:0 3px;
 text-decoration:none;
 }
 
-#chivo {
-border-bottom:1px dotted #444444;
-margin:0 0 30px;
-}
-
-#chivo p a {
-font-weight:700;
-}
-
-#grazr a {
+#xmls a {
 text-decoration:none;
 }
 
@@ -194,3 +185,24 @@ padding-top:40px;
 .paged_output_pages {padding:0;}
 .paged_output_pages li {display:block;}
 
+#archive {
+text-align: center;
+float: right;
+padding-bottom: 30px;
+}
+
+.cal-othermonth {
+color: #d4d4d4;
+}
+
+.cal-link {
+font-weight: bold;
+}
+
+.cal-current {
+color: #FF0000;
+}
+
+.cal-prev, .cal-next {
+font-weight: bold;
+}

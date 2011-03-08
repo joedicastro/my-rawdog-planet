@@ -5,7 +5,7 @@
 	my personal planet
 </%def>
 
-<%def name="grazr()">
+<%def name="xmls()">
     <a href="http://localhost:8000/planet/en/foafroll.xml"><img src="foaf.png" title="FOAF"></a>
     <a href="http://localhost:8000/planet/en/opml.xml"><img src="opml.png" title="OPML"></a>
     <a href="http://localhost:8000/planet/en/rss.xml"><img src="rss.png" title="RSS"></a>
@@ -52,6 +52,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="robots" content="noarchive">
     ${refresh}
+    <link rel="shortcut icon" href="favicon.ico" type="image/vnd.microsoft.icon" />
     <link rel="stylesheet" href="style.css" type="text/css">
     <link rel="alternate" type="application/rss+xml" title="${self.title()}" href="http://localhost:800/en/planet/rss.xml"" />
     <title>${self.title()}</title>
@@ -64,8 +65,8 @@
 ${items}
 </div>
 <div id="feedstats">
-    <div id="grazr">
-        ${self.grazr()}
+    <div id="xmls">
+        ${self.xmls()}
     </div>
     <h2 id="feedstatsheader">Language</h2>
     <div id="log">
@@ -76,8 +77,8 @@ ${items}
         ${self.log()}
     </div>
     <h2 id="feedstatsheader">Archive</h2>
-    <div id="archivo"">
-        ${paged_output_pages}
+    <div id="archive"">
+        ${dated_output_calendar}
     </div>
     <h2 id="feedstatsheader">Blogs</h2>
     <div id="feedlist">

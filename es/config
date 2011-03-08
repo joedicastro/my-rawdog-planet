@@ -292,7 +292,7 @@ statuslogfile ../planet/es/log
 statusoutputfile ../planet/es/log.html
 
 # Articulos por pagina del archivo
-articlesperpage 30
+#articlesperpage 30
 
 # Fuentes de noticias del planeta
 
