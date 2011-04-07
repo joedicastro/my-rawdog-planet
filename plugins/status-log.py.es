@@ -124,29 +124,34 @@ class StatusLogPlugin:
 
 		newfn = self.outputfile + ".new"
 		f = open(newfn, "w")
-		f.write("""<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
-   "http://www.w3.org/TR/html4/strict.dtd">
-<html lang="en">
+		f.write("""<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+     PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="es" lang="es">
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-    <meta name="robots" content="noindex,nofollow,noarchive">
-    <link rel="stylesheet" href="style.css" type="text/css">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="robots" content="noindex,nofollow,noarchive"/>
+    <link rel="stylesheet" href="style.css" type="text/css"/>
     <title>Estado de las fuentes</title>
 </head>
 <body id="rawdog">
 <div id="page">
 <div id="header">
-<h1>Estado de las fuentes</h1>
+<h1><a href="/">Estado de las fuentes</a></h1>
 </div>
 
 <div id="status">
 <table id="feedstatus">
+<thead>
 <tr>
 """)
 		for t in range(0, period, division):
 			f.write("<th>%s</th>\n" % time.strftime("%Hh", time.localtime(starttime + t)))
 		f.write("<th>Fuente</th>\n")
 		f.write("</tr>\n")
+		f.write("</thead>\n")
+		f.write("<tbody>\n")
 
 		names = {}
 		for url in feeds.keys():
@@ -178,6 +183,7 @@ class StatusLogPlugin:
 			f.write("""<td><a href="%s">%s</a></td>\n""" % (url, name))
 			f.write("</tr>\n")
 
+		f.write("</tbody>\n")
 		f.write("""</table>
 </div>
 </div>
