@@ -1,12 +1,12 @@
 # mi planeta particular con rawdog
 
-Es una personalización de rawdog para crear un planete bilingüe 
+Es una personalización de rawdog para crear un planeta bilingüe 
 (español e inglés) con fuentes de noticias en sus correspondientes idiomas. Se 
 actualizan al mismo tiempo.
 
 Además he reescrito el modulo rss (original de Jonathan Riddell y adaptado por 
 Adam Sampson y Roberto Alsina), para substituir la obsoleta (y con mayores 
-dependencias) libreria *`libxml2`* por la librería estandar *`xml.dom.minidom`*
+dependencias) librería *`libxml2`* por la librería estándar *`xml.dom.minidom`*
 
 ### Carpetas en ./
 
@@ -22,7 +22,7 @@ dependencias) libreria *`libxml2`* por la librería estandar *`xml.dom.minidom`*
  
  Donde se alojaran los planetas en esta configuración por defecto. Cada uno se 
  aloja en su carpeta correspondiente y comparten los elementos comunes a través 
- de enlaces simbolicos. 
+ de enlaces simbólicos. 
 
 * **plugins**
  
@@ -72,7 +72,7 @@ dependencias) libreria *`libxml2`* por la librería estandar *`xml.dom.minidom`*
  ejemplo. Si se realiza en local, se puede ejecutar `browse.sh` para visualizar
  inmediatamente el resultado. 
 
-### IMPORTANT
+### IMPORTANTE
 
  Esta configuración solo trabaja bien con rawdog 2.12, en la versión 2.13 no se
  recogen las fechas de las fuentes
