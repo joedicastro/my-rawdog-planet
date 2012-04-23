@@ -1,5 +1,3 @@
-<!-- -*- markdown -*- -->
-
 # mi planeta particular con rawdog
 
 Es una personalización de rawdog para crear un planete bilingüe 

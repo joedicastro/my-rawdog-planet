@@ -1,5 +1,3 @@
-<!-- -*- markdown -*- -->
-
 # my rawdog personal planet
 
 It is a customized rawdog to create a bilingual planet (Spanish & English) with 
