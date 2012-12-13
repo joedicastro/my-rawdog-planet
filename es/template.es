@@ -92,7 +92,7 @@ ${items}
 <a href="http://offog.org/code/rawdog.html">rawdog</a>
 version ${version}
 by <a href="mailto:ats@offog.org">Adam Sampson</a>.</p>
-<p>Theme por <a href="http://code.joedicastro.com/my-rawdog-planet">joe di castro</a>. Basado en el <a href="http://github.com/ralsina/planeta-pyar/tree/master">trabajo de Roberto Alsina</a> para PyAr</p>
+<p>Theme por <a href="http://joedicastro.com">joe di castro</a>. Basado en el <a href="http://github.com/ralsina/planeta-pyar/tree/master">trabajo de Roberto Alsina</a> para PyAr</p>
 <p>
 ${self.validrss()}
 </p>
